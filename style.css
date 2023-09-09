@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    111.4deg,
+    rgba(7, 7, 9, 1) 6.5%,
+    rgba(27, 24, 113, 1) 93.2%
+  );
+}
+
+.calculator {
+  position: relative;
+  border: 1px solid #717377;
+  padding: 17px;
+  border-radius: 16px;
+  background: transparent;
+  width: 380px;
+  height: 550px;
+  box-shadow: 0px 3px 15px rgba(105, 143, 218, 1);
+}
+
+#inputBox {
+  width: 340px;
+  height: 80px;
+  margin: 25px 0;
+  background: transparent;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.4);
+  color: #03e8fc;
+  cursor: pointer;
+}
+
+#inputBox::placeholder {
+  color: #eda3a3;
+  font-weight: 500;
+}
+
+.firstrow {
+  height: 63px;
+  margin-bottom: 17px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.secondrow {
+  height: 63px;
+  margin-bottom: 17px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.thirdrow {
+  height: 63px;
+  margin-bottom: 17px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fourthrow {
+  height: 63px;
+  margin-bottom: 17px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fifthrow {
+  height: 63px;
+  margin-bottom: 17px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* first row */
+.firstrow #allclear {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.firstrow #clear2 {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+.firstrow #percent {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.firstrow #clear {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.firstrow #divide {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* second row */
+.secondrow #seven {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.secondrow #eight {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.secondrow #nine {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.secondrow #multiple {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* third row */
+.thirdrow #four {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.thirdrow #five {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.thirdrow #six {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.thirdrow #sub {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* fourth row */
+.fourthrow #one {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fourthrow #two {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fourthrow #three {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fourthrow #add {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* fifth row */
+.fifthrow #zeros {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fifthrow #zero {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fifthrow #dot {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fifthrow #equal {
+  position: relative;
+  width: 60px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  /* margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px; */
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.number {
+  background-image: linear-gradient(
+    to right,
+    #243949 0%,
+    #517fa4 100%
+  ) !important;
+  color: rgb(0, 255, 47) !important ;
+}
+
+.operators {
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  ) !important;
+  color: #ff0000;
+}
+
+.ans {
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 19%,
+    #ff1361 67%,
+    #fff800 100%
+  ) !important;
+  color: #91ffff !important;
+}
+
+button {
+  transition: all 0.5s ease-in-out !important;
+}
+
+/* button:hover{
+    transform: scale(1.1)!important;
+} */
+button:active {
+  transform: scale(0.7) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .calculator {
+    width: 95%;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+  }
+  #inputBox {
+    font-size: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 235px) {
+  .calculator {
+    width: 106%;
+    height: 105%;
+  }
+}
