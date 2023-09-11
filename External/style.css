@@ -458,7 +458,7 @@ button:active {
 @media screen and (max-width: 768px) {
   .calculator {
     width: 80%;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
@@ -466,7 +466,7 @@ button:active {
   .calculator {
     width: 95%;
     margin: 5px;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
@@ -475,7 +475,7 @@ button:active {
     width: 100%;
     height: 100%;
     margin: 5px;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
   #inputBox {
     font-size: 30px;
@@ -487,7 +487,7 @@ button:active {
   .calculator {
     width: 106%;
     height: 105%;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 #inputBox::placeholder {
@@ -497,13 +497,13 @@ button:active {
 @media screen and (max-width: 768px) {
   .calculator {
     width: 90%;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 @media screen and (max-width: 576px) {
   .calculator {
     width: 95%;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 @media screen and (max-width: 546px) {
@@ -511,7 +511,7 @@ button:active {
     width: 100%;
     height: auto;
     padding: 10px;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
   #inputBox {
     font-size: 20px;
