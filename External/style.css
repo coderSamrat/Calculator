@@ -506,6 +506,9 @@ button:active {
   .calculator {
     width: 90%;
   }
+  .calculator #inputBox{
+    width:100%;
+  }
   body{
     overflow: hidden;
   }
@@ -535,5 +538,14 @@ button:active {
   }
   body{
     overflow: hidden;
+  }
+}
+@media screen and (min-height:1000px){
+  .calculator #inputBox{
+    width:100%;
+  }
+  .calculator{
+    width: 90%;
+    height: fit-content;
   }
 }
