@@ -12,10 +12,6 @@ function percentfun() {
     }
 }
 
-// function clear2fun() {
-//     document.getElementById("inputBox").value = (document.getElementById("inputBox").value).substring(0, (document.getElementById("inputBox").value).length - 2);
-// }
-
 function clearfun() {
     document.getElementById("inputBox").value = (document.getElementById("inputBox").value).substring(0, (document.getElementById("inputBox").value).length - 1);
 }
@@ -121,51 +117,56 @@ function dotfun() {
 }
 
 function ansfun() {
-    var myArray = (document.getElementById("inputBox").value).split(" ");
+    var inputBox = document.getElementById("inputBox");
+    var myArray = inputBox.value.split(" ");
     let firstNum = Number(myArray[0]);
-    let secondtNum = Number(myArray[2]);
+    let secondNum = Number(myArray[2]);
+    let answer;
     switch (myArray[1]) {
         case '+':
-            (document.getElementById("inputBox").value) = firstNum + secondtNum;
+            answer = firstNum + secondNum;
             break;
         case '-':
-            (document.getElementById("inputBox").value) = firstNum - secondtNum;
+            answer = firstNum - secondNum;
             break;
         case '*':
-            (document.getElementById("inputBox").value) = firstNum * secondtNum;
+            answer = firstNum * secondNum;
             break;
         case '/':
-            (document.getElementById("inputBox").value) = firstNum / secondtNum;
+            answer = secondNum !== 0 ? firstNum / secondNum : "Error";
             break;
         case '%':
-            (document.getElementById("inputBox").value) = firstNum / 100;
+            answer = firstNum / 100;
             break;
         default:
             break;
     }
+    inputBox.value = answer;
 }
 
 function continueans(myArray) {
-    var myArray = (document.getElementById("inputBox").value).split(" ");
+    var inputBox = document.getElementById("inputBox");
     let firstNum = Number(myArray[0]);
-    let secondtNum = Number(myArray[2]);
+    let secondNum = Number(myArray[2]);
+    let answer;
     switch (myArray[1]) {
         case '+':
-            (document.getElementById("inputBox").value) = firstNum + secondtNum;
+            answer = firstNum + secondNum;
             break;
         case '-':
-            (document.getElementById("inputBox").value) = firstNum - secondtNum;
+            answer = firstNum - secondNum;
             break;
         case '*':
-            (document.getElementById("inputBox").value) = firstNum * secondtNum;
+            answer = firstNum * secondNum;
             break;
         case '/':
-            (document.getElementById("inputBox").value) = firstNum / secondtNum;
+            answer = secondNum !== 0 ? firstNum / secondNum : "Error";
             break;
         case '%':
-            (document.getElementById("inputBox").value) = firstNum / 100;
+            answer = firstNum / 100;
             break;
         default:
             break;
     }
+    inputBox.value = answer;
 }
