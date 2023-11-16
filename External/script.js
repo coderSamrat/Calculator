@@ -141,6 +141,7 @@ function ansfun() {
         default:
             break;
     }
+    answer = answer.toFixed(2);
     inputBox.value = answer;
 }
 
@@ -168,5 +169,6 @@ function continueans(myArray) {
         default:
             break;
     }
+    answer = answer.toFixed(2);
     inputBox.value = answer;
 }
