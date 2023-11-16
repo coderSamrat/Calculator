@@ -13,7 +13,9 @@ function percentfun() {
 }
 
 function clearfun() {
-    document.getElementById("inputBox").value = (document.getElementById("inputBox").value).substring(0, (document.getElementById("inputBox").value).length - 1);
+    document.getElementById("inputBox").value = 
+        (document.getElementById("inputBox").value).
+            substring(0, (document.getElementById("inputBox").value).length - 1);
 }
 
 function divfun() {
